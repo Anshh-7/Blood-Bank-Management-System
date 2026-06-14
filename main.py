@@ -194,20 +194,6 @@ class LifeFlowApp(tk.Tk):
         for widget in self.winfo_children():
             widget.destroy()
 
-    # def logo(self, parent, size=92, background=PALETTE["panel"]):
-    #     canvas = tk.Canvas(parent, width=size, height=size, bg=background, highlightthickness=0)
-    #     c = size / 2
-    #     canvas.create_oval(c - 34, c - 34, c + 34, c + 34, fill="#FEE4E2", outline="")
-    #     canvas.create_polygon(c, 12, c - 22, c + 18, c, c + 42, c + 22, c + 18, fill=PALETTE["red"], outline="")
-    #     canvas.create_oval(c - 22, c + 4, c + 22, c + 48, fill=PALETTE["red"], outline="")
-    #     for index, color in enumerate([PALETTE["blue"], PALETTE["green"], PALETTE["amber"]]):
-    #         angle = math.radians(25 + index * 120)
-    #         x = c + math.cos(angle) * 37
-    #         y = c + math.sin(angle) * 37
-    #         canvas.create_line(c, c + 18, x, y, fill="#CBD5E1", width=2)
-    #         canvas.create_oval(x - 6, y - 6, x + 6, y + 6, fill=color, outline="")
-    #     canvas.create_text(c, c + 16, text="BB", fill="white", font=("Segoe UI", int(size * 0.18), "bold"))
-    #     return canvas
 
     def button(self, parent, text, command, color=PALETTE["red"], width=16):
         return tk.Button(
